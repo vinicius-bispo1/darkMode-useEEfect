@@ -19,9 +19,18 @@ export default function App() {
   //Explicação de como useEffect funciona
   const [count, setCount] = useState(0);
 
+
+    useEffect(()=>{
+    console.log("Boa noite!!!")
+    })
+
+    useEffect(()=>{
+    alert("Deseja continuar ?") 
+    },[])
+
   //useEffect com o seu array de dependecia ele observa apenas o count
   useEffect(() => {
-    console.log("bom dia");
+     alert("O outono chegou")
   }, [count]);
 
   //useEffect observando Count e mudando as cores da body
